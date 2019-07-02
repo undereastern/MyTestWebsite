@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<Html lang="en">
+<Head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<Title>EXTU</Title>
+	<Script LANGUAGE="JavaScript">
+		//document.all.layer1.style.clip
+		//1은 불투명 0은 투명
+			function intro(){
+				if(i>0){
+					i-=0.02;
+				}
+				document.getElementById("introbackground").style.opacity=i;
+				setTimeout("intro()",10);
+			}
+
+			function Delete(){
+				document.getElementById("introbackground").style.visibility="hidden";
+			}
+	</Script>
+
+	<style type="text/css">
+		.center{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+	</style>
+</Head>
+
+<Body>
+
+
+
+	<div Id="introbackground" style="position:absolute; top:0px; left:0px; width:100%; height:150%; background-color:white; z-Index:1; opacity:1">
+			<h1 style="position:absolute; font-size:75pt; top:27%; left:50%; transform:translate(-50%,-50%);">EXTU</h4>
+			<HR style="position:relative; top:32%; width:10%; border-color:grey;">
+			<h2 class="lead" style="position:absolute; font-size:35pt; top:37%; left:50%; transform:translate(-50%,-50%);">WorldWide</h6>
+	</div>
+
+
+	<Script Language="Javascript">
+		i=1;
+		setTimeout("intro()",900);
+		setTimeout("Delete()",1600);
+	</Script>
+
+	<div style="position:absolute; top:-4%; left:0%; 
+    margin-top:0px; margin-left:0px; width:250px; height:120px;">
+		<h4 style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">EXTU</h4>
+		<HR style="position:relative; top:50%; width:10%; border-color:grey;">
+		<h6 class="lead" style="position:absolute; top:75%; left:50%; transform:translate(-50%,-50%);">WorldWide</h6>
+
+		<a class="btn btn-outline-secondary" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="position:absolute; top:48%; left:85%; 
+    margin-top:0px; margin-bottom:0px; width:100px; height:35px;">
+   				<H5>Seoul</H5></a>
+		   				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		   				 <a class="dropdown-item" href="EXTUTokyo.html">Tokyo</a>
+		   				 <a class="dropdown-item" href="EXTUVancouver.html">Vancouver</a>
+		  </div>
+	</div>
+
+
+	<div class="list-group list-group-horizontal-sm"style="position:absolute; top:6%; left:39%; 
+    margin-top:0px; margin-left:0px; width:500px; height:35px;">
+		  <a href="EXTUBoard.html" target="_Self"><button type="button"  class="btn btn-light bg-white text-dark border-0" style=" margin-left:10px;"><H6>Board</H6></button></a>
+		  <button type="button"  class="btn btn-light bg-white text-dark border-0"" style="margin-left:10px;"><H6>Meet Up</H6></button>
+		  <button type="button"  class="btn btn-light bg-white text-dark border-0"" style="margin-left:10px;"><H6>Market</H6></button>
+		  <button type="button"  class="btn btn-light bg-white text-dark border-0"" style="margin-left:10px;"><H6>Home</H6></button>
+		  <button type="button"  class="btn btn-light bg-white text-dark border-0"" style="margin-left:10px;"><H6>Information</H6></button>
+	</div>
+
+
+	<div style="position:absolute; top:6%; left:80%; width:200px; height:34px;"><button type="button" class="btn btn-light bg-white text-dark border-0" style="position:relative; left:0%; width:100px; height:34px"><H6 class="center">Login</H6></button> <button type="button" class="btn btn-light bg-white text-dark border-0" style="position:relative; top:-100%; left:55%; width:100px; height:34px"><H6 class="center">Register</H6></button></div>
+
+	<div style="position:absolute; left:80%; top:30%; width:150px; height:550px;"></div>
+
+	<iframe src="EXTUBoard.html" name="mainIntro" style="position:absolute; left:2%; top:20%; width:96%; height:1100px; background-color:transparent; border:0"><H1 class="center"></H1>
+	</iframe>
+
+
+	<div style="position:absolute; margin-bottom:20px; left:5%; top:1200px; width:90%;  height:20%;">
+		<HR style="position:relative; top:30%; width:100%; left:0%; border:0.3pt solid black">
+		<H5 class="lead" style="position:relative; top:30px; left:0%; font-size:12pt;">Made by Nuke.Two Korea<BR>undereastern@gmail.com</H5>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</Body>
+</Html>
